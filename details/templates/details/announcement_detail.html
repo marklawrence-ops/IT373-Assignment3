@@ -7,7 +7,7 @@
 <p><small>{{ announcement.date_posted }}</small></p>
 
 <p id="short-content">{{ announcement.content|truncatechars:200 }}</p>
-<p id="full-content" style="display:none;">{{ announcement.content }}</p>
+<p id="full-content" style="display:none;">{{ announcement.content|linebreaksbr }}</p>
 
 <button id="toggle-btn" class="btn btn-secondary btn-sm mt-2">Read more</button>
 
